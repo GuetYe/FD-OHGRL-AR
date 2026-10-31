@@ -1,0 +1,50 @@
+{
+  "algorithm": "PPO-DDPG",
+  "source": 3,
+  "destinations": [
+    15,
+    16,
+    17,
+    18
+  ],
+  "seed": 1234,
+  "device": "cpu",
+  "torch_threads": 1,
+  "low_capacity": 10000,
+  "low_warmup": 32,
+  "low_batch": 16,
+  "control_interval": 5.0,
+  "poll_interval": 0.5,
+  "feedback_timeout": 1200.0,
+  "http_timeout": 5.0,
+  "feedback_settle_snapshots": 1,
+  "rollout_steps": 16,
+  "ppo_epochs": 10,
+  "ppo_minibatch": 8,
+  "ppo_clip": 0.2,
+  "gae_lambda": 0.95,
+  "entropy_coef": 0.001,
+  "max_grad_norm": 0.5,
+  "low_updates_per_feedback": 1,
+  "telemetry_semantics_version": "perflow-aligned-delta-v2",
+  "normalization_profile": {
+    "version": "paper-path-v3-topology-edges",
+    "switch_bw_mbps": 6.0,
+    "access_bw_mbps": 12.0,
+    "initial_delay_ms": 0.1,
+    "initial_loss_percent": 0.0,
+    "queue_limit_packets": 100,
+    "reference_packet_bytes": 1500,
+    "input_loss_unit": "percent",
+    "input_delay_unit": "ms",
+    "queue_mode": "directional",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "epsilon": 1e-08,
+    "topology_edge_count": 24
+  }
+}
