@@ -1,0 +1,54 @@
+{
+  "source": 3,
+  "destinations": [
+    15,
+    16,
+    17,
+    18
+  ],
+  "k": 5,
+  "path_weight": "distance",
+  "hidden": 128,
+  "layers": 5,
+  "gamma": 0.98,
+  "horizon": 8,
+  "learning_rate": 0.0001,
+  "entropy_coef": 0.01,
+  "value_coef": 0.5,
+  "grad_clip": 5.0,
+  "reward_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "queue_mode": "directional",
+  "seed": 1234,
+  "control_interval": 5.0,
+  "poll_interval": 0.5,
+  "feedback_timeout": 1200.0,
+  "http_timeout": 5.0,
+  "feedback_settle_snapshots": 1,
+  "feedback_alignment": "per_flow_installation",
+  "telemetry_semantics_version": "perflow-aligned-delta-v2",
+  "normalization_profile": {
+    "version": "paper-path-v3-topology-edges",
+    "switch_bw_mbps": 6.0,
+    "access_bw_mbps": 12.0,
+    "initial_delay_ms": 0.1,
+    "initial_loss_percent": 0.0,
+    "queue_limit_packets": 100,
+    "reference_packet_bytes": 1500,
+    "input_loss_unit": "percent",
+    "input_delay_unit": "ms",
+    "queue_mode": "directional",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "epsilon": 1e-08,
+    "topology_edge_count": 24
+  }
+}
