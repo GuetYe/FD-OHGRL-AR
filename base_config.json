@@ -1,0 +1,90 @@
+{
+  "algorithm": "SAC",
+  "source": 3,
+  "destinations": [
+    15,
+    16,
+    17,
+    18
+  ],
+  "seed": 1234,
+  "device": "cpu",
+  "torch_threads": 1,
+  "high_capacity": 5000,
+  "low_capacity": 10000,
+  "high_warmup": 16,
+  "low_warmup": 32,
+  "high_batch": 8,
+  "low_batch": 16,
+  "updates_per_feedback": 1,
+  "evaluation_states": 4,
+  "train_interval": 1.5,
+  "control_interval": 5.0,
+  "poll_interval": 0.5,
+  "feedback_timeout": 1200.0,
+  "http_timeout": 5.0,
+  "feedback_settle_snapshots": 1,
+  "telemetry_semantics_version": "perflow-aligned-delta-v2",
+  "evaluation_destination_mode": "distribution",
+  "learning_rate_overrides": {
+    "high_actor_lr": 0.0003,
+    "high_critic_lr": 0.001,
+    "low_actor_lr": 0.0001,
+    "low_critic_lr": 0.001,
+    "high_alpha_lr": 0.00014
+  },
+  "normalization_profile": {
+    "version": "paper-path-v3-topology-edges",
+    "switch_bw_mbps": 6.0,
+    "access_bw_mbps": 12.0,
+    "initial_delay_ms": 0.1,
+    "initial_loss_percent": 0.0,
+    "queue_limit_packets": 100,
+    "reference_packet_bytes": 1500,
+    "input_loss_unit": "percent",
+    "input_delay_unit": "ms",
+    "queue_mode": "directional",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "epsilon": 1e-08,
+    "topology_edge_count": 24
+  },
+  "model_hyperparameters": {
+    "high_hid_dim": 16,
+    "low_hid_dim": 16,
+    "high_actor_lr": 0.0003,
+    "high_critic_lr": 0.001,
+    "high_alpha_lr": 0.00014,
+    "low_actor_lr": 0.0001,
+    "low_critic_lr": 0.001,
+    "high_gamma": 0.98,
+    "low_gamma": 0.98,
+    "high_tau": 0.005,
+    "low_tau": 0.005,
+    "high_dropout": 0.05,
+    "low_dropout": 0.05,
+    "terminal_reward": 10,
+    "terminal_punishment": -10,
+    "ordering_attr_list": [
+      "distance"
+    ],
+    "high_temperature": 1.2000000476837158,
+    "target_entropy": -4
+  },
+  "extra_evaluation": {
+    "enabled": true,
+    "bank": "/home/wp/ohgrl_lab/reward_observe_B_v1/baseline1/fixed_bank.json",
+    "bank_sha256": "355f9444ff5d5e24b0430af00a8324aa66807223246e13a81b851f59ab7a2ec2",
+    "windows": [
+      50,
+      100
+    ],
+    "fixed_feedback_interval": 300,
+    "fixed_states": 128,
+    "fixed_threads": 1
+  }
+}

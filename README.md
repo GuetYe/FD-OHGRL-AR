@@ -1,6 +1,4 @@
-
-
-# FD-OHRGL-AR: Feedback-Driven  Anycast Routing via Online Hierarchical Graph Reinforcement Learning
+# FD-OHRGL-AR: Feedback-Driven Anycast Routing
 
 This repository provides a code demonstration of feedback-driven anycast routing on an 18-node network. The method learns destination-selection probabilities and constructs a route to each candidate destination. Network feedback is collected through an SDN controller and used to update the routing policies.
 
@@ -8,16 +6,16 @@ This repository provides a code demonstration of feedback-driven anycast routing
 
 The demonstration uses the `original18` topology defined in `topologies.json`.
 
-| Property               | Configuration  |
-| ---------------------- | -------------- |
-| Network nodes          | 18             |
-| Undirected links       | 24             |
-| Source node            | 3              |
+| Property | Configuration |
+|---|---|
+| Network nodes | 18 |
+| Undirected links | 24 |
+| Source node | 3 |
 | Candidate destinations | 15, 16, 17, 18 |
-| Inter-switch bandwidth | 6 Mbps         |
-| Host-access bandwidth  | 12 Mbps        |
-| Initial link delay     | 0.1 ms         |
-| Initial packet loss    | 0%             |
+| Inter-switch bandwidth | 6 Mbps |
+| Host-access bandwidth | 12 Mbps |
+| Initial link delay | 0.1 ms |
+| Initial packet loss | 0% |
 
 The upper policy produces a distribution over the four destinations. The lower policy builds paths hop by hop. A next hop must be adjacent, unvisited, and able to reach the destination after the visited prefix is excluded. Lower-policy node features indicate the current node, destination, and visited nodes.
 

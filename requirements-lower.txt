@@ -1,0 +1,10 @@
+# Lower/SDN environment only. This is an inventory, NOT a version lock.
+# Use the existing validated lower environment and its freeze for reproduction.
+# Ryu's eventlet/WebOb and other transitive dependencies must match that
+# environment; do not upgrade an active experiment's environment.
+ryu==4.34
+Flask
+requests
+networkx
+# Mininet, Mininet-WiFi, Open vSwitch and mnexec are installed separately.
+# Optional TensorBoard logging: tensorboardX (not needed for forwarding).

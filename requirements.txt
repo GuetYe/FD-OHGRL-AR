@@ -1,0 +1,12 @@
+# Upper/model environment only: Python 3.9.
+# Direct dependency inventory, NOT the historical server's pip freeze.
+# Reuse the existing working environment for reproduction. Resolve and freeze
+# exact versions in a NEW environment before running experiments.
+# Select the CPU/CUDA build of torch separately for the target host.
+torch==1.13.0
+torch-geometric
+numpy
+scipy
+networkx
+requests
+tensorboardX
