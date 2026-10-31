@@ -1,0 +1,22 @@
+{
+  "CORE_CHANGES.patch": "4cd7fec61e2940809e9f56e08aa3e0402ad4715e166920a1bd3b3f9789bb43e3",
+  "FINAL_AUDIT_20261003.md": "a122f7b863637ff8346a8708af038b0240b72b1a82def832c7e9ef4ef991d6a5",
+  "README_中文.md": "594b93f739ad2b2336622620fb333d070344838b00058df2cc664f0b218aa5c8",
+  "VALIDATION.txt": "1c45c62fa54474cf9a793eb91775aecdca33a8609a0ab1f9694d00f8a9611a54",
+  "compare_runs.py": "4a3e724564d041f504ade3a4af18e1051d02f6bfe326fd862d49bf24e4f709ab",
+  "config.json": "ad14735b6fdc21379202052f03480b18c049531da8992de4cf3462fba5367e7c",
+  "core/algorithms_model.py": "910cfe34b73dc3bea9aae61ca53b67c7a9d3eaa744cf8cd4f4d5acaae40da914",
+  "core/data_fraction.py": "35ddca81f346fc952d1a3252bb8ab24d92702f02cc3a6a995feb061c9b51e120",
+  "core/network_profile.json": "eef1131b3dbc3c438cca754fa49138336c5dd832848d50b4f3e58cb59dc42404",
+  "core/path_performance.py": "802027b6a388a9cf93fad28807e0cb2257e3dffb1a0d9a5af93e8e7083449e14",
+  "core/setting.py": "7f71179d09964f8713377f8970a75efdd9d779061b96cf9e4e0e4e6bf7491c7e",
+  "core/utils.py": "4bd6010d7bf1cb414907617d2da8a598e66b9004a7ce641d9a21c32f555e9be7",
+  "model_adapter.py": "ceff5defb74d7847e1e87d041276776ce5389e89af60b0987f0d4ee30a383662",
+  "protocol.py": "4e1f1415a056d8968b4f8d0c765093bf13d6a6955ff13be51844162c5b1eae68",
+  "requirements.txt": "7b1c9642c35e37de575c1dc0a2ab1873f43103ffc8877b241deece707144c92d",
+  "run.py": "c94f9e50643ea64a1da6aa7e0de4eb352a809da28b6ce040442097d7acb8250a",
+  "tests/fixtures/request_data.json": "0fdad0c4e71aa6be4a6f2c7867dee6070265ab3ea9b3e0e686083f43d748b516",
+  "tests/test_compatibility.py": "93a113c9ad50f5bcb0bc6d8a5b13572ed6a0d5a35222422e95d3ff2d39575571",
+  "tests/test_http_smoke.py": "7bf32a1a51e0c8f8e42e3edcc0b20f7555b7f8de0a09ef8f4144562d43dde0c6",
+  "tests/test_reporting.py": "93b0567b9478546f80726e98e6396bad38fb75626d9d026ee7e4ad68b1f28b4c"
+}
