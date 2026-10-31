@@ -1,0 +1,20 @@
+{
+  "version": "paper-path-v3-topology-edges",
+  "switch_bw_mbps": 6.0,
+  "access_bw_mbps": 12.0,
+  "initial_delay_ms": 0.1,
+  "initial_loss_percent": 0.0,
+  "queue_limit_packets": 100,
+  "reference_packet_bytes": 1500,
+  "input_loss_unit": "percent",
+  "input_delay_unit": "ms",
+  "queue_mode": "directional",
+  "weights": [
+    0.3,
+    0.3,
+    0.2,
+    0.2
+  ],
+  "epsilon": 1e-08,
+  "topology_edge_count": 24
+}
