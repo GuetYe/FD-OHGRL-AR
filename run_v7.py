@@ -39,7 +39,7 @@ def root_required():require(hasattr(os,'geteuid') and os.geteuid()==0,'Use sudo 
 @contextlib.contextmanager
 def global_lock():
     import fcntl
-    path=Path('/home/wp/ohgrl_lab/overnight.lock');path.parent.mkdir(parents=True,exist_ok=True)
+    path=Path('/home/anonymous/ohgrl_lab/overnight.lock');path.parent.mkdir(parents=True,exist_ok=True)
     with path.open('a') as f:
         fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);yield
 def verify():
@@ -53,9 +53,9 @@ def quiet(a):
     for port in [5000,6633]:
         try:check_port(port)
         except OSError:raise RuntimeError('API/controller bind unavailable on port '+str(port)+'; inspect ss -ltnp')
-    roots=[Path('/home/wp/MininetWiFi20261003_perflow')]+list(a.runtime_root.glob('*/lower'))
+    roots=[Path('/home/anonymous/MininetWiFi20261003_perflow')]+list(a.runtime_root.glob('*/lower'))
     for lower in roots:require(l.pending(lower)['pending_leases']==0,'Unreleased leases: '+str(lower))
-    current=Path('/home/wp/server_scheme3/current.txt')
+    current=Path('/home/anonymous/server_scheme3/current.txt')
     if current.exists():l.ensure_quiet(Path(current.read_text().strip()))
     for receipt in a.work_root.glob('**/*.process.json'):
         require(not l.live(read(receipt)),'Old V7 process still live: '+str(receipt))
@@ -331,8 +331,8 @@ def main():
     p.add_argument('command',choices=['verify','check','probe','smoke','run','status','stop','cleanup','score','pack','_worker','_host'])
     p.add_argument('--topology',default='original18',choices=['all']+list(read(HERE/'topologies.json')))
     p.add_argument('--trial',default='trial1');p.add_argument('--budget',type=int,default=900)
-    p.add_argument('--runtime-root',type=Path,default=Path('/home/wp/ohgrl_lab/OHGRL_v7/runtime'))
-    p.add_argument('--work-root',type=Path,default=Path('/home/wp/ohgrl_lab/OHGRL_v7/results'))
+    p.add_argument('--runtime-root',type=Path,default=Path('/home/anonymous/ohgrl_lab/OHGRL_v7/runtime'))
+    p.add_argument('--work-root',type=Path,default=Path('/home/anonymous/ohgrl_lab/OHGRL_v7/results'))
     p.add_argument('--lower-python',default='/opt/ohgrl-lower/venv/bin/python');p.add_argument('--timeout-hours',type=float,default=24)
     p.add_argument('--run');p.add_argument('--host-id',type=int);p.add_argument('--phase',default='run',choices=['run','smoke'])
     a=p.parse_args();require(a.trial.replace('_','').replace('-','').isalnum(),'Use an ASCII alphanumeric trial name')

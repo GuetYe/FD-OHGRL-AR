@@ -75,8 +75,8 @@ def prepare(name,root,upper_python,lower_python):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--topology',default='all',choices=['all']+list(read(HERE/'topologies.json')))
-    parser.add_argument('--runtime-root',type=Path,default=Path('/home/wp/ohgrl_lab/OHGRL_v7/runtime'))
-    parser.add_argument('--upper-python',default='/home/wp/anaconda3/envs/Evans0/bin/python3.9')
+    parser.add_argument('--runtime-root',type=Path,default=Path('/home/anonymous/ohgrl_lab/OHGRL_v7/runtime'))
+    parser.add_argument('--upper-python',default='/home/anonymous/anaconda3/envs/model-env/bin/python3.9')
     parser.add_argument('--lower-python',default='/opt/ohgrl-lower/venv/bin/python')
     a=parser.parse_args()
     for rel,digest in read(HERE/'SHA256.json').items():

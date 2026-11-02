@@ -77,7 +77,7 @@
   },
   "extra_evaluation": {
     "enabled": true,
-    "bank": "/home/wp/ohgrl_lab/reward_observe_B_v1/baseline1/fixed_bank.json",
+    "bank": "/home/anonymous/ohgrl_lab/reward_observe_B_v1/baseline1/fixed_bank.json",
     "bank_sha256": "355f9444ff5d5e24b0430af00a8324aa66807223246e13a81b851f59ab7a2ec2",
     "windows": [
       50,
