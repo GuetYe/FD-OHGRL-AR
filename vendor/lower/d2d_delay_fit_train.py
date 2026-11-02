@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 """
-@Auther:Evans_WP
-@Contact:WenPeng19943251019@163.com
+Identity information omitted for anonymous peer review.
+Identity information omitted for anonymous peer review.
 @Time:2025/3/20 22:37
 @File:d2d_delay_fit_train.py
 @Desc:端到端时延拟合函数

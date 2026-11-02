@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 """
-@Auther:Evans_WP
-@Contact:WenPeng19943251019@163.com
+Identity information omitted for anonymous peer review.
+Identity information omitted for anonymous peer review.
 @Time:2025/3/16 15:47
 @File:path_feature_server.py
 @Desc:整理并传送路径性能

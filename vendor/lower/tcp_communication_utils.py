@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 """
-@Auther:Evans_WP
-@Contact:WenPeng19943251019@163.com
+Identity information omitted for anonymous peer review.
+Identity information omitted for anonymous peer review.
 @Time:2025/3/31
 @File:tcp_communication_utils.py
 @Desc: ryu实时将状态数据发送给服务器工具

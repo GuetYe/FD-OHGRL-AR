@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 """
-@Auther:Evans_WP
-@Contact:WenPeng19943251019@163.com
+Identity information omitted for anonymous peer review.
+Identity information omitted for anonymous peer review.
 @Time:2025/2/26 9:53
 @File:tcp_communication_client.py
 @Desc: 控制器与服务器，实现数据传输

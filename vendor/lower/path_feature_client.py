@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 """
-@Auther:Evans_WP
-@Contact:WenPeng19943251019@163.com
+Identity information omitted for anonymous peer review.
+Identity information omitted for anonymous peer review.
 @Time:2025/3/16 22:48
 @File:path_feature_client.py
 @Desc:发出数据请求，将获得的数据转化成pd.DataFrame类型

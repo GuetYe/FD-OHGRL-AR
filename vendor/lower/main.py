@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 """
-@Auther:LFY
-@Contact:2545039870@qq.com
+Identity information omitted for anonymous peer review.
+Identity information omitted for anonymous peer review.
 @Time: 2024/10/16 15:47
 @File: main.py
 @Decs:*********************
